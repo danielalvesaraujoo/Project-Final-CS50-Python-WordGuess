@@ -1,109 +1,105 @@
-# 🧙‍♂️ Adivinhação de Palavras - Edição Harry Potter
+# 🧙‍♂️ Word Guessing Game - Harry Potter Edition
 
-## 📽️ Demonstração em vídeo
+## 📽️ Video Demonstration
 
-*(Adicione aqui o link da demonstração se houver)*
-
----
-
-## 📌 Descrição
-
-Este projeto foi desenvolvido como trabalho final da disciplina **Introdução à Programação com Python**, do curso **CS50** oferecido por **Harvard University**.
-
-O jogo é uma versão temática do clássico jogo de adivinhação de palavras, ambientado no universo mágico de **Harry Potter**. Desenvolvido completamente em Python, o objetivo é reforçar os conceitos de programação aprendidos ao longo do curso, como estruturas de repetição, listas, funções e manipulação de strings.
+*(Add the demo link here if available)*
 
 ---
 
-## 🎮 Sobre o jogo
+## 📌 Description
 
-O jogo propõe um desafio simples e divertido: adivinhar uma palavra secreta relacionada ao universo de Harry Potter, uma letra por vez.
+This project was developed as the final assignment for the course **Introduction to Programming with Python**, part of the **CS50** program offered by **Harvard University**.
 
-### Regras básicas:
-
-* A palavra é escolhida aleatoriamente de uma lista com termos mágicos.
-* O jogador tem **cinco chances** de errar. Se errar mais do que isso, perde o jogo.
-* Letras já utilizadas são registradas e exibidas para evitar repetições.
-* O jogo não diferencia entre **letras maiúsculas e minúsculas**.
-
-O desafio está em descobrir a palavra inteira antes que o número de tentativas incorretas se esgote!
+The game is a themed version of the classic word guessing game, set in the magical world of **Harry Potter**. Fully developed in Python, its purpose is to reinforce programming concepts learned throughout the course, such as loops, lists, functions, and string manipulation.
 
 ---
 
-## 🧠 Palavras do Universo Mágico
+## 🎮 About the Game
 
-As palavras são cuidadosamente selecionadas do mundo de Harry Potter. Alguns exemplos incluem:
+The game offers a simple and fun challenge: guess a secret word related to the Harry Potter universe, one letter at a time.
+
+### Basic Rules:
+
+* The word is randomly chosen from a list of magical terms.
+* The player has **five chances** to make mistakes. If they exceed this limit, the game is lost.
+* Already used letters are tracked and displayed to avoid repetition.
+* The game is **case-insensitive** (no distinction between uppercase and lowercase letters).
+
+The challenge is to guess the entire word before running out of incorrect attempts!
+
+---
+
+## 🧠 Words from the Magical Universe
+
+The words are carefully selected from the Harry Potter world. Some examples include:
 
 * "harry"
 * "hermione"
 * "ron"
 * "hogwarts"
-* "varinha"
-* "grifinória"
-* "sonserina"
+* "wand"
+* "gryffindor"
+* "slytherin"
 * "patronum"
 * "dementor"
 * "hippogriff"
 * "horcrux"
 * "broomstick"
-  ...e muitas outras!
+  ...and many more!
 
 ---
 
-## 🧾 Como o código funciona
+## 🧾 How the Code Works
 
-O projeto está organizado em funções, o que torna o código limpo e reutilizável. A seguir, uma visão geral das principais partes:
+The project is organized into functions, keeping the code clean and reusable. Below is an overview of the main components:
 
-* `main()`: Função principal que gerencia o fluxo do jogo, incluindo a lógica de tentativas, entrada do usuário e exibição dos resultados.
-* `escolher_palavra(palavras)`: Seleciona aleatoriamente uma palavra da lista fornecida.
-* `atualizar_palavra_escondida(palavra_sorteada, palavra_escondida, letra)`: Atualiza a palavra visível ao jogador com as letras já adivinhadas.
-* `jogada(...)`: Processa cada tentativa do jogador, verifica se a letra está correta e atualiza o estado da palavra e das tentativas.
+* `main()`: The main function that controls the game flow, including logic for attempts, user input, and displaying results.
+* `choose_word(words)`: Randomly selects a word from the provided list.
+* `update_hidden_word(chosen_word, hidden_word, letter)`: Updates the visible word with the correctly guessed letters.
+* `make_guess(...)`: Processes each guess, checks if the letter is correct, and updates the word and attempt state accordingly.
 
-Essas funções trabalham juntas para proporcionar uma experiência interativa e divertida.
+These functions work together to provide an interactive and engaging experience.
 
 ---
 
-## ▶️ Como jogar
+## ▶️ How to Play
 
-1. Certifique-se de ter o Python instalado em sua máquina.
-2. Execute o arquivo `project.py` em seu terminal ou editor Python.
-3. O jogo exibirá a palavra oculta como uma sequência de traços (ex: `---` para uma palavra de 3 letras).
-4. Digite uma letra por vez quando solicitado.
-5. Se a letra estiver correta, será revelada na palavra. Caso contrário, uma tentativa será descontada.
-6. Você tem **cinco chances** de erro.
-7. Se acertar todas as letras, verá a mensagem:
-   **`Parabéns! 🎉 Você acertou a palavra: 'ron'`**
-8. Se errar todas as tentativas, verá:
-   **`Você perdeu. 💀 A palavra era: 'ron'`**
+1. Make sure Python is installed on your machine.
+2. Run the `project.py` file in your terminal or Python editor.
+3. The game will display the hidden word as a series of dashes (e.g., `---` for a 3-letter word).
+4. Enter one letter at a time when prompted.
+5. If the letter is correct, it will be revealed in the word. If not, you lose one attempt.
+6. You have **five chances** to make mistakes.
+7. If you guess all the letters, you’ll see the message:
+   **`Congratulations! 🎉 You guessed the word: 'ron'`**
+8. If you use up all your chances, you’ll see:
+   **`You lost. 💀 The word was: 'ron'`**
 
-💡 Letras digitadas anteriormente são exibidas para ajudá-lo a não repetir palpites.
+💡 Previously guessed letters are shown to help you avoid repeating guesses.
 
-> Exemplo:
-> Suponha que a palavra a ser adivinhada seja `ron`.
-> A mensagem inicial será: `palavra: ---`
-> Se você digitar a letra `o`, será exibido: `palavra: -o-`.
-> O jogo continua até você adivinhar todas as letras corretamente ou errar 5 vezes.
+> Example:
+> Suppose the word to guess is `ron`.
+> The initial message will be: `word: ---`
+> If you type the letter `o`, it will display: `word: -o-`.
+> The game continues until you guess all letters correctly or make 5 mistakes.
 
 <img width="494" height="619" alt="image" src="https://github.com/user-attachments/assets/c2f1bd3b-2dbf-4b44-936c-291765419033" />
 
 ---
 
-## 💻 Tecnologias utilizadas
+## 💻 Technologies Used
 
 * Python 3.x
-* Terminal/Console para entrada e saída de dados
-* Biblioteca `random` (nativa)
+* Terminal/Console for input and output
+* Native `random` library
 
 ---
 
-## 🎯 Objetivos de aprendizado
+## 🎯 Learning Objectives
 
-* Aplicar lógica de programação e controle de fluxo.
-* Trabalhar com listas, strings e funções em Python.
-* Criar um projeto interativo de terminal.
-* Praticar boas práticas de organização e estruturação de código.
+* Apply programming logic and flow control.
+* Work with lists, strings, and functions in Python.
+* Create an interactive terminal-based project.
+* Practice good code organization and structure.
 
 ---
-
-
-
-
