@@ -1,11 +1,3 @@
-# Word Guess - Harry Potter Edition 🧙‍♂️
-
-#### Video Demo:  <URL HERE>
-
-Claro! Abaixo está uma versão expandida do seu `README.md`, com mais de **500 palavras**, mantendo clareza, organização e profissionalismo. Também inclui melhorias de formatação e descrição, mantendo o tom amigável e educativo:
-
----
-
 # 🧙‍♂️ Adivinhação de Palavras - Edição Harry Potter
 
 ## 📽️ Demonstração em vídeo
