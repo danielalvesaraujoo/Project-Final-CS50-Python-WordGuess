@@ -17,8 +17,12 @@ The player must guess a secret word related to the Harry Potter world, one lette
 
 Some examples of words used in the game:
 - "harry"
+- "hermione"
+- "ron"
 - "hogwarts"
 - "wand"
+- "gryffindor"
+- "slytherin"
 - ... and others!
 
 ## 🧾 How the Code Works
