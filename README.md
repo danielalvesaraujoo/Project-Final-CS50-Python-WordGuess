@@ -37,7 +37,14 @@ The game is composed of the following main functions:
 ## ▶️ How to Play
 
 1. Run the "project.py" file.  
-2. The game will prompt you to enter a letter — keep typing letters whenever asked until you guess the word.
+2. The game will ask you to enter a letter. Keep entering letters whenever prompted until you guess the word. There's no difference between uppercase and lowercase — you can type whichever you prefer.
+
+  For example,
+  Let's suppose the word to be guessed is "ron", then the message "word: ---" will be displayed, indicating that the word has 3 letters.
+  When a letter is typed, for example "o", it will show "word: -o-", displaying the position of the letter "o" and the missing letters.
+  When all the letters are correctly guessed, the message "Congratulations! 🎉 You guessed the word: 'ron'" will appear.
+  You can make a maximum of five mistakes. If you make them all, the message "You lost. 💀 The word was: 'ron'" will appear.
+
 
 <img width="494" height="619" alt="image" src="https://github.com/user-attachments/assets/c2f1bd3b-2dbf-4b44-936c-291765419033" />
 
