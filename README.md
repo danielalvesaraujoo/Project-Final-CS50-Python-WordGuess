@@ -1,50 +1,117 @@
 # Word Guess - Harry Potter Edition 🧙‍♂️
 
 #### Video Demo:  <URL HERE>
-#### Description:
-This is the final project for [CS50’s Introduction to Programming with Python](https://cs50.harvard.edu/python/) from Harvard University, developed in Python.  
-The game is a themed version of the classic word-guessing game, set in the magical universe of **Harry Potter**.
 
-## 🎮 About the Game
+Claro! Abaixo está uma versão expandida do seu `README.md`, com mais de **500 palavras**, mantendo clareza, organização e profissionalismo. Também inclui melhorias de formatação e descrição, mantendo o tom amigável e educativo:
 
-The player must guess a secret word related to the Harry Potter world, one letter at a time. The goal is to figure out the entire word before running out of attempts.
+---
 
-- Each word is randomly selected from a predefined list.
-- The player has **5 chances** to make incorrect guesses before losing.
-- Already used letters are stored and displayed to avoid repetition.
+# 🧙‍♂️ Adivinhação de Palavras - Edição Harry Potter
 
-## 🧠 Words from the Magical Universe
+## 📽️ Demonstração em vídeo
 
-Some examples of words used in the game:
-- "harry"
-- "hermione"
-- "ron"
-- "hogwarts"
-- "wand"
-- "gryffindor"
-- "slytherin"
-- ... and others!
+*(Adicione aqui o link da demonstração se houver)*
 
-## 🧾 How the Code Works
+---
 
-The game is composed of the following main functions:
+## 📌 Descrição
 
-- "main()": Manages the game’s core logic, including user input, remaining attempts, and win/lose conditions.
-- "escolher_palavra(palavras)": Randomly selects a word from the list.
-- "atualizar_palavra_escondida(palavra_sorteada, palavra_escondida, letra)": Updates the hidden word with the correctly guessed letters.
-- "jogada(letras_adivinhadas, letra, palavra_sorteada, palavra_escondida)": Processes a guess and returns the updated state of the word, whether the guess was correct, and if it was a missed attempt.
+Este projeto foi desenvolvido como trabalho final da disciplina **Introdução à Programação com Python**, do curso **CS50** oferecido por **Harvard University**.
 
-## ▶️ How to Play
+O jogo é uma versão temática do clássico jogo de adivinhação de palavras, ambientado no universo mágico de **Harry Potter**. Desenvolvido completamente em Python, o objetivo é reforçar os conceitos de programação aprendidos ao longo do curso, como estruturas de repetição, listas, funções e manipulação de strings.
 
-1. Run the "project.py" file.  
-2. The game will ask you to enter a letter. Keep entering letters whenever prompted until you guess the word. There's no difference between uppercase and lowercase — you can type whichever you prefer.
+---
 
-  For example,
-  Let's suppose the word to be guessed is "ron", then the message "word: ---" will be displayed, indicating that the word has 3 letters.
-  When a letter is typed, for example "o", it will show "word: -o-", displaying the position of the letter "o" and the missing letters.
-  When all the letters are correctly guessed, the message "Congratulations! 🎉 You guessed the word: 'ron'" will appear.
-  You can make a maximum of five mistakes. If you make them all, the message "You lost. 💀 The word was: 'ron'" will appear.
+## 🎮 Sobre o jogo
 
+O jogo propõe um desafio simples e divertido: adivinhar uma palavra secreta relacionada ao universo de Harry Potter, uma letra por vez.
+
+### Regras básicas:
+
+* A palavra é escolhida aleatoriamente de uma lista com termos mágicos.
+* O jogador tem **cinco chances** de errar. Se errar mais do que isso, perde o jogo.
+* Letras já utilizadas são registradas e exibidas para evitar repetições.
+* O jogo não diferencia entre **letras maiúsculas e minúsculas**.
+
+O desafio está em descobrir a palavra inteira antes que o número de tentativas incorretas se esgote!
+
+---
+
+## 🧠 Palavras do Universo Mágico
+
+As palavras são cuidadosamente selecionadas do mundo de Harry Potter. Alguns exemplos incluem:
+
+* "harry"
+* "hermione"
+* "ron"
+* "hogwarts"
+* "varinha"
+* "grifinória"
+* "sonserina"
+* "patronum"
+* "dementor"
+* "hippogriff"
+* "horcrux"
+* "broomstick"
+  ...e muitas outras!
+
+---
+
+## 🧾 Como o código funciona
+
+O projeto está organizado em funções, o que torna o código limpo e reutilizável. A seguir, uma visão geral das principais partes:
+
+* `main()`: Função principal que gerencia o fluxo do jogo, incluindo a lógica de tentativas, entrada do usuário e exibição dos resultados.
+* `escolher_palavra(palavras)`: Seleciona aleatoriamente uma palavra da lista fornecida.
+* `atualizar_palavra_escondida(palavra_sorteada, palavra_escondida, letra)`: Atualiza a palavra visível ao jogador com as letras já adivinhadas.
+* `jogada(...)`: Processa cada tentativa do jogador, verifica se a letra está correta e atualiza o estado da palavra e das tentativas.
+
+Essas funções trabalham juntas para proporcionar uma experiência interativa e divertida.
+
+---
+
+## ▶️ Como jogar
+
+1. Certifique-se de ter o Python instalado em sua máquina.
+2. Execute o arquivo `project.py` em seu terminal ou editor Python.
+3. O jogo exibirá a palavra oculta como uma sequência de traços (ex: `---` para uma palavra de 3 letras).
+4. Digite uma letra por vez quando solicitado.
+5. Se a letra estiver correta, será revelada na palavra. Caso contrário, uma tentativa será descontada.
+6. Você tem **cinco chances** de erro.
+7. Se acertar todas as letras, verá a mensagem:
+   **`Parabéns! 🎉 Você acertou a palavra: 'ron'`**
+8. Se errar todas as tentativas, verá:
+   **`Você perdeu. 💀 A palavra era: 'ron'`**
+
+💡 Letras digitadas anteriormente são exibidas para ajudá-lo a não repetir palpites.
+
+> Exemplo:
+> Suponha que a palavra a ser adivinhada seja `ron`.
+> A mensagem inicial será: `palavra: ---`
+> Se você digitar a letra `o`, será exibido: `palavra: -o-`.
+> O jogo continua até você adivinhar todas as letras corretamente ou errar 5 vezes.
 
 <img width="494" height="619" alt="image" src="https://github.com/user-attachments/assets/c2f1bd3b-2dbf-4b44-936c-291765419033" />
+
+---
+
+## 💻 Tecnologias utilizadas
+
+* Python 3.x
+* Terminal/Console para entrada e saída de dados
+* Biblioteca `random` (nativa)
+
+---
+
+## 🎯 Objetivos de aprendizado
+
+* Aplicar lógica de programação e controle de fluxo.
+* Trabalhar com listas, strings e funções em Python.
+* Criar um projeto interativo de terminal.
+* Praticar boas práticas de organização e estruturação de código.
+
+---
+
+
+
 
