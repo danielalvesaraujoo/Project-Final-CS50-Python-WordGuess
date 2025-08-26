@@ -1,7 +1,5 @@
 🧙‍♂️ Word Guessing Game - Harry Potter Edition
-📽️ Video Demonstration
-
-(Add the demo link here if available)
+📽️ Video Demonstration: https://youtu.be/5Fqr4Bm1nco
 
 📌 Description
 
