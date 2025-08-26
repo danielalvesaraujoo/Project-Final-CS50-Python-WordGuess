@@ -1,2 +1,7 @@
-random
-pytest
+#EN: The libraries below are required, but they are all native, so there is no need to install them
+#PT: É necessário as bibliotecas abaixo, porém são todas nativas, então não precisa instalar
+
+pip install os
+pip install shutil
+pip install time
+pip install random
