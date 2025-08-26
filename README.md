@@ -32,12 +32,17 @@ The game is case-insensitive, so uppercase and lowercase letters are treated the
 Visual feedback is provided via images stored in the images folder:
 
 inicio.png – the initial screen, displayed only once at the start of the game.
+<img width="651" height="751" alt="inicio" src="https://github.com/user-attachments/assets/a8e61ee4-7830-4a3d-aca8-d2693ff05768" />
 
 forca.png – displayed after the first guess to indicate the start of the hangman challenge.
+<img width="651" height="751" alt="forca" src="https://github.com/user-attachments/assets/70da3e21-1cee-4753-b023-b15f50d21549" />
 
 1.png to 6.png – updated images that correspond to each incorrect guess.
+<img width="1582" height="1219" alt="1a6PNG" src="https://github.com/user-attachments/assets/ed7f9572-43b9-440c-82a7-f29ba5907b1f" />
+
 
 venceu.png – displayed when the player successfully guesses the word.
+<img width="651" height="751" alt="venceu" src="https://github.com/user-attachments/assets/d1cd6c33-be05-4a14-bd37-483ae671e4bc" />
 
 Players must guess the entire word before running out of incorrect attempts. The combination of terminal-based interaction and dynamic images creates a more immersive experience compared to traditional text-based hangman games.
 
@@ -118,9 +123,7 @@ You have six chances to guess incorrectly. Each wrong guess updates the hangman 
 First incorrect guess → 1.png
 
 Second → 2.png
-
 …
-
 Sixth → 6.png (last chance before losing)
 
 Correct guesses reveal letters in the word.
@@ -135,12 +138,15 @@ You lost. 💀 The word was: 'RON'
 
 Example Gameplay:
 
-Word: --- 
-Guess a letter: o
-Word: -O- 
+> Example:
+> Suppose the word to guess is ron.
+> The initial message will be: word: ---
+> If you type the letter o, it will display: word: -o-.
+> The game continues until you guess all letters correctly or make 5 mistakes.
+
+<img width="494" height="619" alt="image" src="https://github.com/user-attachments/assets/c2f1bd3b-2dbf-4b44-936c-291765419033" />
 
 
-The game continues until the word is guessed correctly or all six attempts are exhausted.
 
 📷 Visual Flow of the Game
 
