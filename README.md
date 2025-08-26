@@ -1,105 +1,201 @@
-# 🧙‍♂️ Word Guessing Game - Harry Potter Edition
+🧙‍♂️ Word Guessing Game - Harry Potter Edition
+📽️ Video Demonstration
 
-## 📽️ Video Demonstration
+(Add the demo link here if available)
 
-*(Add the demo link here if available)*
+📌 Description
 
----
+This project was developed as the final assignment for the course Introduction to Programming with Python, part of the CS50 program offered by Harvard University.
 
-## 📌 Description
+The game is a themed version of the classic word guessing game, set in the magical world of Harry Potter. Fully developed in Python, its purpose is to reinforce programming concepts learned throughout the course, such as loops, lists, functions, and string manipulation.
 
-This project was developed as the final assignment for the course **Introduction to Programming with Python**, part of the **CS50** program offered by **Harvard University**.
+Additionally, this version introduces visual feedback using images that change according to the player's progress. This improvement enhances the gameplay experience, allowing players to not only interact via the terminal but also see visual representations of the hangman state, correct guesses, and victory or defeat outcomes.
 
-The game is a themed version of the classic word guessing game, set in the magical world of **Harry Potter**. Fully developed in Python, its purpose is to reinforce programming concepts learned throughout the course, such as loops, lists, functions, and string manipulation.
+The project demonstrates practical use of Python standard libraries, including os and shutil for file manipulation, and time for controlling game pacing. It also showcases good coding practices, such as function modularity, input validation, and proper tracking of game state.
 
----
+Through this project, players reinforce their knowledge of Python programming while enjoying an engaging and thematic game experience, combining text-based gameplay with visual storytelling in the magical Harry Potter universe.
 
-## 🎮 About the Game
+🎮 About the Game
 
-The game offers a simple and fun challenge: guess a secret word related to the Harry Potter universe, one letter at a time.
+The game offers a simple yet fun challenge: guess a secret word from the Harry Potter universe, one letter at a time.
 
-### Basic Rules:
+Basic Rules:
 
-* The word is randomly chosen from a list of magical terms.
-* The player has **five chances** to make mistakes. If they exceed this limit, the game is lost.
-* Already used letters are tracked and displayed to avoid repetition.
-* The game is **case-insensitive** (no distinction between uppercase and lowercase letters).
+The word is randomly chosen from a curated list of magical terms.
 
-The challenge is to guess the entire word before running out of incorrect attempts!
+The player has six chances to make mistakes. If this limit is exceeded, the game is lost.
 
----
+Already used letters are tracked and displayed to avoid repetition.
 
-## 🧠 Words from the Magical Universe
+The game is case-insensitive, so uppercase and lowercase letters are treated the same.
+
+Visual feedback is provided via images stored in the images folder:
+
+inicio.png – the initial screen, displayed only once at the start of the game.
+
+forca.png – displayed after the first guess to indicate the start of the hangman challenge.
+
+1.png to 6.png – updated images that correspond to each incorrect guess.
+
+venceu.png – displayed when the player successfully guesses the word.
+
+Players must guess the entire word before running out of incorrect attempts. The combination of terminal-based interaction and dynamic images creates a more immersive experience compared to traditional text-based hangman games.
+
+🧠 Words from the Magical Universe
 
 The words are carefully selected from the Harry Potter world. Some examples include:
 
-* "harry"
-* "hermione"
-* "ron"
-* "hogwarts"
-* "wand"
-* "gryffindor"
-* "slytherin"
-* "patronum"
-* "dementor"
-* "hippogriff"
-* "horcrux"
-* "broomstick"
-  ...and many more!
+"harry"
 
----
+"hermione"
 
-## 🧾 How the Code Works
+"ron"
 
-The project is organized into functions, keeping the code clean and reusable. Below is an overview of the main components:
+"hogwarts"
 
-* `main()`: The main function that controls the game flow, including logic for attempts, user input, and displaying results.
-* `choose_word(words)`: Randomly selects a word from the provided list.
-* `update_hidden_word(chosen_word, hidden_word, letter)`: Updates the visible word with the correctly guessed letters.
-* `make_guess(...)`: Processes each guess, checks if the letter is correct, and updates the word and attempt state accordingly.
+"wand"
 
-These functions work together to provide an interactive and engaging experience.
+"gryffindor"
 
----
+"slytherin"
 
-## ▶️ How to Play
+"patronum"
 
-1. Make sure Python is installed on your machine.
-2. Run the `project.py` file in your terminal or Python editor.
-3. The game will display the hidden word as a series of dashes (e.g., `---` for a 3-letter word).
-4. Enter one letter at a time when prompted.
-5. If the letter is correct, it will be revealed in the word. If not, you lose one attempt.
-6. You have **five chances** to make mistakes.
-7. If you guess all the letters, you’ll see the message:
-   **`Congratulations! 🎉 You guessed the word: 'ron'`**
-8. If you use up all your chances, you’ll see:
-   **`You lost. 💀 The word was: 'ron'`**
+"dementor"
 
-💡 Previously guessed letters are shown to help you avoid repeating guesses.
+"hippogriff"
 
-> Example:
-> Suppose the word to guess is `ron`.
-> The initial message will be: `word: ---`
-> If you type the letter `o`, it will display: `word: -o-`.
-> The game continues until you guess all letters correctly or make 5 mistakes.
+"horcrux"
 
-<img width="494" height="619" alt="image" src="https://github.com/user-attachments/assets/c2f1bd3b-2dbf-4b44-936c-291765419033" />
+"broomstick"
 
----
+"dumbledore"
 
-## 💻 Technologies Used
+"voldemort"
 
-* Python 3.x
-* Terminal/Console for input and output
-* Native `random` library
+"draco"
 
----
+"invisibility"
 
-## 🎯 Learning Objectives
+These words were chosen to not only make the game entertaining but also to immerse players in the magical universe. The word list is easily extensible, allowing for future additions like new characters, spells, magical objects, or creatures, making the game more challenging and dynamic over time.
 
-* Apply programming logic and flow control.
-* Work with lists, strings, and functions in Python.
-* Create an interactive terminal-based project.
-* Practice good code organization and structure.
+🧾 How the Code Works
 
----
+The project is organized into functions, which keeps the code modular, readable, and reusable. Key components include:
+
+main(): Controls the main game loop, manages attempts, validates user input, updates the visible word, and handles image updates. It ensures smooth gameplay by integrating terminal interaction and visual feedback.
+
+choose_word(words): Randomly selects a word from the provided list, guaranteeing a different challenge each time the game is played.
+
+update_hidden_word(chosen_word, hidden_word, letter): Updates the hidden word display whenever a correct letter is guessed.
+
+make_guess(...): Processes each letter guessed by the player, updating both the word display and the attempt counter.
+
+atualiza_imagem(imagem_nome): Copies the corresponding image to jogo.png to visually reflect the current game state.
+
+abrir_imagem_jogo(): Opens the initial image in VS Code only once, ensuring the player sees the starting screen before guessing begins.
+
+Input validation ensures only single alphabetical characters are accepted. Already guessed letters are tracked to prevent repetition, improving both gameplay flow and user experience.
+
+▶️ How to Play
+
+Ensure Python 3.x is installed on your computer.
+
+Run the project.py file in a terminal or Python editor.
+
+The hidden word will be displayed as a series of dashes (e.g., --- for a 3-letter word).
+
+Enter one letter at a time.
+
+Invalid entries (numbers, symbols, multiple letters) are rejected.
+
+Previously guessed letters are displayed to avoid repetition.
+
+After each guess, the terminal and jogo.png image will update to reflect progress.
+
+You have six chances to guess incorrectly. Each wrong guess updates the hangman image sequentially:
+
+First incorrect guess → 1.png
+
+Second → 2.png
+
+…
+
+Sixth → 6.png (last chance before losing)
+
+Correct guesses reveal letters in the word.
+
+If the word is fully guessed, the victory screen (venceu.png) is displayed, along with the message:
+Congratulations! 🎉 You guessed the word: 'RON'
+
+If all attempts are used, the last hangman image is shown with the message:
+You lost. 💀 The word was: 'RON'
+
+💡 Tip: The game is case-insensitive, so entering H or h produces the same result. Enjoy the combination of terminal gameplay and visual storytelling.
+
+Example Gameplay:
+
+Word: --- 
+Guess a letter: o
+Word: -O- 
+
+
+The game continues until the word is guessed correctly or all six attempts are exhausted.
+
+📷 Visual Flow of the Game
+
+The game uses images to make the experience more engaging:
+
+Start of the game: inicio.png
+
+Displays a welcome screen in VS Code with instructions.
+
+First guess: forca.png
+
+Shows the initial hangman state after the player starts guessing.
+
+Incorrect attempts: 1.png → 6.png
+
+Each wrong guess updates the hangman image, visually representing progress toward losing.
+
+Victory: venceu.png
+
+Displayed when the player successfully guesses all letters.
+
+Defeat: 6.png (last attempt)
+
+Shows the final hangman image along with the correct word revealed.
+
+This flow ensures the game is interactive, dynamic, and visually engaging, going beyond the traditional text-only hangman.
+
+💻 Technologies Used
+
+Python 3.x
+
+Terminal/Console for input and output
+
+Native random library for word selection
+
+Native os and shutil libraries for file and image manipulation
+
+time library for delays and pacing
+
+The project demonstrates the integration of multiple Python libraries to enhance gameplay while keeping dependencies minimal.
+
+🎯 Learning Objectives
+
+Apply programming logic, loops, and conditional statements
+
+Work with lists, strings, and functions
+
+Handle file operations for dynamic visual feedback
+
+Implement input validation and state tracking
+
+Create an interactive, terminal-based, and visually engaging project
+
+Practice modularity and good code organization
+
+Enhance problem-solving skills through gameplay logic
+
+This project illustrates how a simple game concept can be expanded with additional features like images, input validation, and gameplay feedback, making it both educational and fun.
